@@ -19,7 +19,7 @@ const educationData: Education[] = [
     school: "University of Utah",
     degree: "B.S. Computer Science",
     period: "Aug 2021 - Dec 2024",
-    gpa: "3.6",
+    gpa: "3.7",
     details: [
       "Minor in Mathematics",
       "Dean's List (5 Semesters)",
