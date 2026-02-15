@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lianrui Geng | ZD Lab Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Archivo', 'sans-serif'],
+              serif: ['"DM Serif Display"', 'serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            colors: {
+              'swiss-red': '#D03025',
+              'paper': '#F2F0E6',
+              'ink': '#111111',
+              'concrete': '#E5E5E5',
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #E5E5E5 1px, transparent 1px), linear-gradient(to bottom, #E5E5E5 1px, transparent 1px)",
+            },
+            backgroundSize: {
+              'grid-pattern': '40px 40px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F2F0E6;
+        color: #111111;
+        cursor: crosshair;
+      }
+      ::selection {
+        background-color: #D03025;
+        color: #F2F0E6;
+      }
+      /* Hide scrollbar for clean look but allow scrolling */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      .brutalist-shadow {
+        box-shadow: 4px 4px 0px 0px #111111;
+      }
+      .brutalist-shadow-sm {
+        box-shadow: 2px 2px 0px 0px #111111;
+      }
+      .brutalist-hover:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px 0px #D03025;
+      }
+      .border-ink {
+        border-color: #111111;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "vite": "https://esm.sh/vite@^7.3.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
